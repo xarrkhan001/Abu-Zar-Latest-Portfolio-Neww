@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-bold tracking-tight">
-              Abuzar<span className="text-portfolio-blue">.</span>
+              Portfolio<span className="text-portfolio-blue">.</span>
             </a>
             <p className="mt-2 text-muted-foreground">
               Designed & Built with precision.

@@ -1,4 +1,5 @@
-import { CheckCircle } from "lucide-react";
+
+import { CheckCircle, MapPin, Mail, Phone } from "lucide-react";
 import { useEffect } from "react";
 
 const AboutSection = () => {
@@ -39,7 +40,7 @@ const AboutSection = () => {
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Image Column */}
-          <div className="lg:w-2/5 reveal lg:block hidden">
+          <div className="lg:w-2/5 reveal">
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-[#003d8f] opacity-70" />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-[#003d8f] opacity-70" />
@@ -48,6 +49,29 @@ const AboutSection = () => {
                 alt="About Me" 
                 className="rounded-2xl shadow-xl relative z-10 w-full object-cover aspect-[3/4]"
               />
+          
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#003d8f]/10 flex items-center justify-center text-[#003d8f]">
+                      <Mail size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm">Email</p>
+                      <p className="font-medium">abuzarktk123@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#003d8f]/10 flex items-center justify-center text-[#003d8f]">
+                      <MapPin size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm">Location</p>
+                      <p className="font-medium">Warsak Rd, Peshawar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           

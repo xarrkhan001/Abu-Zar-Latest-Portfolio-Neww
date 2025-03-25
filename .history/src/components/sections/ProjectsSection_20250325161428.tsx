@@ -27,23 +27,13 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      "title": "Chat Wave  ( Chat App )",
-      "description": "A real-time messaging application with user authentication and seamless chat experience.",
-      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      "tools": ["React", "taiwlind css", "radix ui"],
-      "liveUrl": "https://voice-chat-chatapp.vercel.app/",
-      "githubUrl": "#"
-   },
-
-   {
-    title: "Heritage Walk Footwear",
-    description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    tools: ["Next.js", "Stripe", "Firebase", "Sanity"],
-    liveUrl: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
-    githubUrl: "#"
-  },
-   
+      title: "E-Commerce Platform 02",
+      description: "An online shopping platform with payment integration, user authentication, and admin dashboard.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      tools: ["React", "Next.js", "Stripe", "Firebase"],
+      liveUrl: "https://chat-app-voice-wave.vercel.app/",
+      githubUrl: "#"
+    },
     {
       title: "E-Commerce Platform 01",
       description: "A feature-rich online shop with modern UI/UX design principles.",
@@ -76,7 +66,14 @@ const ProjectsSection = () => {
       liveUrl: "https://abuzarnew.vercel.app/",
       githubUrl: "#"
     },
- 
+    {
+      title: "Heritage Walk Footwear",
+      description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      tools: ["Next.js", "Stripe", "Firebase", "Sanity"],
+      liveUrl: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
+      githubUrl: "#"
+    }
   ];
 
   return (

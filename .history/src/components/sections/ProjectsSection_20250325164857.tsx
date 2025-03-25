@@ -27,10 +27,10 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      "title": "Chat Wave  ( Chat App )",
+      "title": "Chat Wave",
       "description": "A real-time messaging application with user authentication and seamless chat experience.",
       "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      "tools": ["React", "taiwlind css", "radix ui"],
+      "tools": ["React"],
       "liveUrl": "https://voice-chat-chatapp.vercel.app/",
       "githubUrl": "#"
    },

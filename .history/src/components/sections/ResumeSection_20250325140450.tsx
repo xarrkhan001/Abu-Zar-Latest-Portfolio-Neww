@@ -135,52 +135,39 @@ const ResumeSection = () => {
               </div>
               
               <div className="border-l-2 border-[#003d8f]/30 pl-8 space-y-8">
-  <div className="relative">
-    <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
-    
-    <div className="flex flex-col">
-      <h4 className="text-xl font-semibold">
-        <a href="https://podbcn.techemulsion.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
-          https://podbcn.techemulsion.com/
-        </a>
-      </h4>
-      <p className="text-muted-foreground mt-2">
-        In this project, I worked as a Frontend Developer, building a component where users can create an account and add all their social media links in one place, making it easy to share multiple profiles at once.
-      </p>
-    </div>
-  </div>
-  
-  <div className="relative">
-    <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
-    
-    <div className="flex flex-col">
-      <h4 className="text-xl font-semibold">
-        <a href="https://www.rains.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
-          https://www.rains.com/
-        </a>
-      </h4>
-      <p className="text-muted-foreground mt-2">
-        This is an e-commerce platform selling products like jackets, purses, and other items designed specifically for rainy weather. In this project, I worked extensively on the frontend to enhance the user experience.
-      </p>
-    </div>
-  </div>
-  
-  <div className="relative">
-    <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
-    
-    <div className="flex flex-col">
-      <h4 className="text-xl font-semibold">
-        <a href="https://mrbook.peshawar.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
-          https://mrbook.peshawar.com/
-        </a>
-      </h4>
-      <p className="text-muted-foreground mt-2">
-        This is an e-commerce platform for ordering a variety of books. Designed to provide a seamless shopping experience, I worked on the frontend to enhance the navigation and ensure a smooth user interface.
-      </p>
-    </div>
-  </div>
-</div>
-
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://podbcn.techemulsion.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      In this project, I worked as a Frontend Developer, building a component where users can create an account and add all their social media links in one place, making it easy to share multiple profiles at once.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://www.rains.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      This is an e-commerce platform selling products like jackets, purses, and other items designed specifically for rainy weather. In this project, I worked extensively on the frontend to enhance the user experience.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://mrbook.peshawar.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      This is an e-commerce platform for ordering a variety of books. Designed to provide a seamless shopping experience, I worked on the frontend to enhance the navigation and ensure a smooth user interface.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           

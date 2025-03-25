@@ -140,7 +140,7 @@ const ResumeSection = () => {
     
     <div className="flex flex-col">
       <h4 className="text-xl font-semibold">
-        <a href="https://podbcn.techemulsion.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+        <a href="https://podbcn.techemulsion.com/" target="_blank" rel="noopener noreferrer">
           https://podbcn.techemulsion.com/
         </a>
       </h4>
@@ -155,7 +155,7 @@ const ResumeSection = () => {
     
     <div className="flex flex-col">
       <h4 className="text-xl font-semibold">
-        <a href="https://www.rains.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+        <a href="https://www.rains.com/" target="_blank" rel="noopener noreferrer">
           https://www.rains.com/
         </a>
       </h4>
@@ -170,7 +170,7 @@ const ResumeSection = () => {
     
     <div className="flex flex-col">
       <h4 className="text-xl font-semibold">
-        <a href="https://mrbook.peshawar.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+        <a href="https://mrbook.peshawar.com/" target="_blank" rel="noopener noreferrer">
           https://mrbook.peshawar.com/
         </a>
       </h4>
@@ -181,9 +181,6 @@ const ResumeSection = () => {
   </div>
 </div>
 
-            </div>
-          </div>
-          
           {/* Education & Certifications */}
           <div>
             {/* Education */}

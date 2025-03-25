@@ -27,22 +27,13 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      "title": "Chat Wave  ( Chat App )",
+      "title": "Chat Wave",
       "description": "A real-time messaging application with user authentication and seamless chat experience.",
       "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      "tools": ["React", "taiwlind css", "radix ui"],
+      "tools": ["React"],
       "liveUrl": "https://voice-chat-chatapp.vercel.app/",
       "githubUrl": "#"
-   },
-
-   {
-    title: "Heritage Walk Footwear",
-    description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    tools: ["Next.js", "Stripe", "Firebase", "Sanity"],
-    liveUrl: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
-    githubUrl: "#"
-  },
+   }
    
     {
       title: "E-Commerce Platform 01",
@@ -76,7 +67,14 @@ const ProjectsSection = () => {
       liveUrl: "https://abuzarnew.vercel.app/",
       githubUrl: "#"
     },
- 
+    {
+      title: "Heritage Walk Footwear",
+      description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      tools: ["Next.js", "Stripe", "Firebase", "Sanity"],
+      liveUrl: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
+      githubUrl: "#"
+    }
   ];
 
   return (

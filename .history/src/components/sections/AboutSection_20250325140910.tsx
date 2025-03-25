@@ -39,7 +39,7 @@ const AboutSection = () => {
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Image Column */}
-          <div className="lg:w-2/5 reveal lg:block hidden">
+          <div className="lg:w-2/5 reveal">
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-[#003d8f] opacity-70" />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-[#003d8f] opacity-70" />
