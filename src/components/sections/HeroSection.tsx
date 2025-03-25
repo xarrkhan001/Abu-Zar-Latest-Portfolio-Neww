@@ -44,7 +44,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-conic from-portfolio-blue/20 via-purple-500/20 to-portfolio-blue/20 blur-2xl opacity-70 rounded-full animate-float" />
               <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                  src="/lovable-uploads/e3360417-b511-49c9-ab2e-778f6fd7130d.png"
                   alt="Portrait"
                   className="w-full aspect-square object-cover"
                 />
