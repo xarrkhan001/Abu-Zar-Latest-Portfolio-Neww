@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { MenuIcon, X } from 'lucide-react';
+import { MenuIcon, X, Briefcase } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,9 +43,10 @@ const Navbar = () => {
       <div className="container-custom py-4 flex items-center justify-between">
         <a
           href="#home"
-          className="text-2xl font-bold tracking-tight transition-colors hover:text-portfolio-blue"
+          className="text-2xl font-bold tracking-tight transition-colors hover:text-[#003d8f] flex items-center gap-2"
         >
-          Portfolio<span className="text-portfolio-blue">.</span>
+          <Briefcase className="text-[#003d8f]" />
+          <span>Abuzar<span className="text-[#003d8f]">.</span></span>
         </a>
 
         {/* Desktop Navigation */}
@@ -69,24 +70,30 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed inset-0 bg-gradient-to-b from-white to-blue-50 z-40 transform transition-transform duration-500 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex flex-col h-full p-8">
-          <div className="flex justify-end mb-8">
-            <button onClick={toggleMenu} className="focus:outline-none">
+          <div className="flex justify-between items-center mb-8">
+            <a href="#home" className="text-2xl font-bold tracking-tight flex items-center gap-2">
+              <Briefcase className="text-[#003d8f]" />
+              <span>Abuzar<span className="text-[#003d8f]">.</span></span>
+            </a>
+            <button onClick={toggleMenu} className="focus:outline-none text-[#003d8f]">
               <X size={24} />
             </button>
           </div>
           <nav className="flex flex-col space-y-6">
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xl font-medium hover:text-portfolio-blue transition-colors"
+                className="text-xl font-medium hover:text-[#003d8f] transition-all transform hover:-translate-y-1 duration-200 flex items-center"
                 onClick={toggleMenu}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
+                <span className="w-6 h-0.5 bg-[#003d8f] mr-3 opacity-70"></span>
                 {link.name}
               </a>
             ))}

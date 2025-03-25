@@ -79,7 +79,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-24 bg-gradient-to-b from-white to-blue-50">
       <div className="container-custom">
         <div className="text-center mb-16 reveal">
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-[#003d8f]/10 text-[#003d8f] text-sm font-medium">
@@ -97,10 +97,10 @@ const ContactSection = () => {
             <a 
               key={index}
               href={info.href}
-              className="bg-white p-8 rounded-2xl shadow-md border border-border hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col items-center text-center reveal"
+              className="bg-white p-8 rounded-2xl shadow-md border border-border hover:shadow-lg transition-all hover:-translate-y-2 transform duration-300 flex flex-col items-center text-center reveal"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-full bg-[#003d8f]/10 flex items-center justify-center mb-4">
+              <div className="w-16 h-16 rounded-full bg-[#003d8f]/10 flex items-center justify-center mb-4 transform transition-transform hover:rotate-6 duration-300">
                 {info.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
@@ -116,7 +116,7 @@ const ContactSection = () => {
               <img 
                 src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Contact" 
-                className="w-full h-full object-cover opacity-50"
+                className="w-full h-full object-cover opacity-50 hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[#003d8f]/80 to-[#003d8f]/90 flex flex-col items-center justify-center p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">Let's work together</h3>
@@ -143,7 +143,7 @@ const ContactSection = () => {
                       name="name" 
                       value={formData.name}
                       onChange={handleChange}
-                      className="contact-input" 
+                      className="contact-input focus:ring-2 focus:ring-[#003d8f] transition-all" 
                       placeholder="John Doe" 
                       required 
                     />
@@ -159,7 +159,7 @@ const ContactSection = () => {
                       name="email" 
                       value={formData.email}
                       onChange={handleChange}
-                      className="contact-input" 
+                      className="contact-input focus:ring-2 focus:ring-[#003d8f] transition-all" 
                       placeholder="john@example.com" 
                       required 
                     />
@@ -176,7 +176,7 @@ const ContactSection = () => {
                     name="subject" 
                     value={formData.subject}
                     onChange={handleChange}
-                    className="contact-input" 
+                    className="contact-input focus:ring-2 focus:ring-[#003d8f] transition-all" 
                     placeholder="Project Inquiry" 
                     required 
                   />
@@ -192,7 +192,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5} 
-                    className="contact-input resize-none" 
+                    className="contact-input resize-none focus:ring-2 focus:ring-[#003d8f] transition-all" 
                     placeholder="Your message here..." 
                     required
                   ></textarea>
@@ -200,7 +200,7 @@ const ContactSection = () => {
                 
                 <button 
                   type="submit" 
-                  className="btn-primary w-full flex items-center justify-center gap-2 bg-[#003d8f] hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)]"
+                  className="btn-primary w-full flex items-center justify-center gap-2 bg-[#003d8f] hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)] transform hover:-translate-y-1 transition-all duration-300"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

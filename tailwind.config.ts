@@ -111,6 +111,14 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "rotate-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -123,10 +131,13 @@ export default {
         "scale-in": "scale-in 0.5s ease-out forwards",
         "blur-in": "blur-in 0.6s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
+        "shimmer": "shimmer 2s infinite linear",
+        "rotate-slow": "rotate-slow 20s linear infinite",
       },
       backgroundImage: {
         "gradient-glass": "linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-shimmer": "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
       }
     },
   },
