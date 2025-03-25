@@ -43,7 +43,8 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Here we would normally send the email to abuzarktk123@gmail.com
+    // For now we'll just simulate the success with a delay
     setTimeout(() => {
       setIsSubmitting(false);
       toast.success("Message sent successfully! I'll get back to you soon.");
@@ -58,30 +59,30 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="text-portfolio-blue" size={24} />,
+      icon: <Mail className="text-[#003d8f]" size={24} />,
       title: "Email",
-      value: "contact@example.com",
-      href: "mailto:contact@example.com"
+      value: "abuzarktk123@gmail.com",
+      href: "mailto:abuzarktk123@gmail.com"
     },
     {
-      icon: <Phone className="text-portfolio-blue" size={24} />,
+      icon: <Phone className="text-[#003d8f]" size={24} />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "0317-8521144",
+      href: "tel:+923178521144"
     },
     {
-      icon: <MapPin className="text-portfolio-blue" size={24} />,
+      icon: <MapPin className="text-[#003d8f]" size={24} />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Warsak Rd, Peshawar",
       href: "#"
     }
   ];
 
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-24 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16 reveal">
-          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-portfolio-blue/10 text-portfolio-blue text-sm font-medium">
+          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-[#003d8f]/10 text-[#003d8f] text-sm font-medium">
             Contact
           </div>
           <h2 className="section-title">Get In Touch</h2>
@@ -99,7 +100,7 @@ const ContactSection = () => {
               className="bg-white p-8 rounded-2xl shadow-md border border-border hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col items-center text-center reveal"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-full bg-portfolio-blue/10 flex items-center justify-center mb-4">
+              <div className="w-16 h-16 rounded-full bg-[#003d8f]/10 flex items-center justify-center mb-4">
                 {info.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
@@ -111,13 +112,13 @@ const ContactSection = () => {
         <div className="bg-white rounded-2xl shadow-xl border border-border overflow-hidden reveal">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Map or image column */}
-            <div className="bg-secondary h-full min-h-[300px] lg:min-h-0 relative overflow-hidden">
+            <div className="bg-[#003d8f] h-full min-h-[300px] lg:min-h-0 relative overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Contact" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover opacity-50"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/30 to-primary/40 flex flex-col items-center justify-center p-8">
+              <div className="absolute inset-0 bg-gradient-to-b from-[#003d8f]/80 to-[#003d8f]/90 flex flex-col items-center justify-center p-8">
                 <h3 className="text-2xl font-bold text-white mb-4">Let's work together</h3>
                 <p className="text-white/90 text-center max-w-md">
                   I'm always open to new projects and opportunities. 
@@ -199,7 +200,7 @@ const ContactSection = () => {
                 
                 <button 
                   type="submit" 
-                  className="btn-primary w-full flex items-center justify-center gap-2"
+                  className="btn-primary w-full flex items-center justify-center gap-2 bg-[#003d8f] hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)]"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

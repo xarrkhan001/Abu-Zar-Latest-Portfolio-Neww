@@ -1,5 +1,5 @@
 
-import { FileText, BookOpen, Award, Calendar, Download } from "lucide-react";
+import { FileText, BookOpen, Award, Calendar, Download, Briefcase } from "lucide-react";
 import { useEffect } from "react";
 
 const ResumeSection = () => {
@@ -26,69 +26,63 @@ const ResumeSection = () => {
   }, []);
 
   const handleDownloadCV = () => {
-    // In a real implementation, you'd have an actual PDF file to download
-    alert("CV download would start here - replace with actual file download");
+    // In a real implementation, download the CV PDF file
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Abuzar_Khan_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const workExperience = [
     {
-      position: "Senior Frontend Developer",
-      company: "Tech Innovations Inc",
-      period: "2021 - Present",
-      description: "Led the development of responsive web applications using React and Next.js. Implemented state management with Redux and designed UI components with Tailwind CSS."
+      position: "FRONTEND DEVELOPER",
+      company: "TECH PIONEER",
+      period: "2023 - 2024",
+      description: "8 months work experience at Tech Pioneer as Front-End Developer, where I collaborated on several projects, contributing to their design, development, and implementation."
     },
     {
-      position: "Full Stack Developer",
-      company: "Digital Solutions Agency",
-      period: "2018 - 2021",
-      description: "Developed and maintained web applications using MERN stack. Integrated third-party APIs and implemented payment gateways. Optimized application performance and database queries."
-    },
-    {
-      position: "Junior Web Developer",
-      company: "Creative Web Studio",
-      period: "2016 - 2018",
-      description: "Created responsive websites using HTML, CSS, and JavaScript. Collaborated with designers to implement UI/UX designs. Maintained and updated existing client websites."
+      position: "SOFTWARE ENGINEER (Frontend Developer)",
+      company: "TECH EMULSION",
+      period: "2021 - 2023",
+      description: "Currently doing onsite job as a Software Engineer at Tech Emulsion, working on frontend development for various web applications and e-commerce platforms."
     }
   ];
 
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Tech University",
-      period: "2014 - 2016",
-      description: "Specialized in Web Technologies and Software Engineering. Completed thesis on 'Optimizing React Applications for Performance'."
+      degree: "BS-SOFTWARE ENGINEERING",
+      institution: "Islamia College University, Peshawar",
+      period: "01/07/2020 - 25/05/2024",
+      description: "Completing Bachelor's degree in Software Engineering with focus on web technologies and software development."
     },
     {
-      degree: "Bachelor of Science in Information Technology",
-      institution: "State University",
-      period: "2010 - 2014",
-      description: "Graduated with honors. Relevant coursework included database management, algorithms, and web development fundamentals."
+      degree: "FSC",
+      institution: "City College Peshawar",
+      period: "17/01/2020",
+      description: "Completed pre-engineering studies with good academic standing."
     }
   ];
 
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2022"
-    },
-    {
-      title: "Professional Web Developer Certification",
+      title: "BASICS AND ADVANCED REACT",
       issuer: "Meta",
-      date: "2021"
+      date: "2024"
     },
     {
-      title: "Google Cloud Certified Professional",
-      issuer: "Google",
-      date: "2020"
+      title: "PROGRAMMING WITH JAVASCRIPT",
+      issuer: "Meta",
+      date: "2023"
     }
   ];
 
   return (
-    <section id="resume" className="py-24 bg-secondary/50">
+    <section id="resume" className="py-24 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16 reveal">
-          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-portfolio-blue/10 text-portfolio-blue text-sm font-medium">
+          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-[#003d8f]/10 text-[#003d8f] text-sm font-medium">
             Resume
           </div>
           <h2 className="section-title">Professional Background</h2>
@@ -97,7 +91,7 @@ const ResumeSection = () => {
           </p>
           <button 
             onClick={handleDownloadCV}
-            className="btn-primary flex items-center gap-2 mx-auto mt-8"
+            className="btn-primary bg-[#003d8f] flex items-center gap-2 mx-auto mt-8 hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)]"
           >
             <Download size={18} />
             Download CV
@@ -108,19 +102,19 @@ const ResumeSection = () => {
           {/* Work Experience */}
           <div className="reveal">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-portfolio-blue/10 rounded-full flex items-center justify-center text-portfolio-blue">
-                <BookOpen size={24} />
+              <div className="w-12 h-12 bg-[#003d8f]/10 rounded-full flex items-center justify-center text-[#003d8f]">
+                <Briefcase size={24} />
               </div>
               <h3 className="text-2xl font-bold">Work Experience</h3>
             </div>
             
-            <div className="border-l-2 border-portfolio-blue/30 pl-8 space-y-12">
+            <div className="border-l-2 border-[#003d8f]/30 pl-8 space-y-12">
               {workExperience.map((job, index) => (
                 <div key={index} className="relative">
-                  <div className="absolute -left-10 top-0 w-6 h-6 bg-portfolio-blue rounded-full border-4 border-white" />
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
                   
                   <div className="flex flex-col">
-                    <span className="flex items-center gap-2 text-sm text-portfolio-blue mb-1">
+                    <span className="flex items-center gap-2 text-sm text-[#003d8f] mb-1">
                       <Calendar size={14} />
                       {job.period}
                     </span>
@@ -131,6 +125,50 @@ const ResumeSection = () => {
                 </div>
               ))}
             </div>
+            
+            <div className="mt-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 bg-[#003d8f]/10 rounded-full flex items-center justify-center text-[#003d8f]">
+                  <BookOpen size={24} />
+                </div>
+                <h3 className="text-2xl font-bold">Projects</h3>
+              </div>
+              
+              <div className="border-l-2 border-[#003d8f]/30 pl-8 space-y-8">
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://podbcn.techemulsion.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      In this project, I worked as a Frontend Developer, building a component where users can create an account and add all their social media links in one place, making it easy to share multiple profiles at once.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://www.rains.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      This is an e-commerce platform selling products like jackets, purses, and other items designed specifically for rainy weather. In this project, I worked extensively on the frontend to enhance the user experience.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
+                  
+                  <div className="flex flex-col">
+                    <h4 className="text-xl font-semibold">https://mrbook.peshawar.com/</h4>
+                    <p className="text-muted-foreground mt-2">
+                      This is an e-commerce platform for ordering a variety of books. Designed to provide a seamless shopping experience, I worked on the frontend to enhance the navigation and ensure a smooth user interface.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Education & Certifications */}
@@ -138,19 +176,19 @@ const ResumeSection = () => {
             {/* Education */}
             <div className="reveal">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-portfolio-blue/10 rounded-full flex items-center justify-center text-portfolio-blue">
+                <div className="w-12 h-12 bg-[#003d8f]/10 rounded-full flex items-center justify-center text-[#003d8f]">
                   <FileText size={24} />
                 </div>
                 <h3 className="text-2xl font-bold">Education</h3>
               </div>
               
-              <div className="border-l-2 border-portfolio-blue/30 pl-8 space-y-12 mb-16">
+              <div className="border-l-2 border-[#003d8f]/30 pl-8 space-y-12 mb-16">
                 {education.map((edu, index) => (
                   <div key={index} className="relative">
-                    <div className="absolute -left-10 top-0 w-6 h-6 bg-portfolio-blue rounded-full border-4 border-white" />
+                    <div className="absolute -left-10 top-0 w-6 h-6 bg-[#003d8f] rounded-full border-4 border-white" />
                     
                     <div className="flex flex-col">
-                      <span className="flex items-center gap-2 text-sm text-portfolio-blue mb-1">
+                      <span className="flex items-center gap-2 text-sm text-[#003d8f] mb-1">
                         <Calendar size={14} />
                         {edu.period}
                       </span>
@@ -166,13 +204,13 @@ const ResumeSection = () => {
             {/* Certifications */}
             <div className="reveal">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-portfolio-blue/10 rounded-full flex items-center justify-center text-portfolio-blue">
+                <div className="w-12 h-12 bg-[#003d8f]/10 rounded-full flex items-center justify-center text-[#003d8f]">
                   <Award size={24} />
                 </div>
                 <h3 className="text-2xl font-bold">Certifications</h3>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => (
                   <div 
                     key={index} 
@@ -183,6 +221,19 @@ const ResumeSection = () => {
                     <p className="text-xs text-muted-foreground">{cert.date}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+            
+            <div className="mt-16 reveal">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-12 h-12 bg-[#003d8f]/10 rounded-full flex items-center justify-center text-[#003d8f]">
+                  <FileText size={24} />
+                </div>
+                <h3 className="text-2xl font-bold">Reference</h3>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-md border border-border">
+                <p className="text-lg">Available upon request.</p>
               </div>
             </div>
           </div>

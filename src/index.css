@@ -86,7 +86,7 @@
   }
   
   .btn-primary {
-    @apply bg-portfolio-blue text-white px-6 py-3 rounded-full font-medium transition-all shadow-[0_0_0_0_rgba(0,113,227,0.3)] hover:shadow-[0_0_0_4px_rgba(0,113,227,0.3)] active:scale-95;
+    @apply bg-[#003d8f] text-white px-6 py-3 rounded-full font-medium transition-all shadow-[0_0_0_0_rgba(0,61,143,0.3)] hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)] active:scale-95;
   }
   
   .btn-secondary {
@@ -94,11 +94,11 @@
   }
   
   .nav-link {
-    @apply relative px-2 py-1 transition-colors duration-200 hover:text-portfolio-blue after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-portfolio-blue after:left-0 after:right-0 after:bottom-0 after:mx-auto after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative px-2 py-1 transition-colors duration-200 hover:text-[#003d8f] after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#003d8f] after:left-0 after:right-0 after:bottom-0 after:mx-auto after:transition-all after:duration-300 hover:after:w-full;
   }
   
   .nav-link.active {
-    @apply text-portfolio-blue after:w-full;
+    @apply text-[#003d8f] after:w-full;
   }
   
   .project-card {
@@ -114,7 +114,7 @@
   }
   
   .contact-input {
-    @apply w-full bg-secondary border-none rounded-xl p-4 text-base outline-none focus:ring-2 focus:ring-portfolio-blue transition-all duration-200;
+    @apply w-full bg-secondary border-none rounded-xl p-4 text-base outline-none focus:ring-2 focus:ring-[#003d8f] transition-all duration-200;
   }
 }
 
@@ -130,6 +130,54 @@
   transform: translateY(0);
 }
 
+/* Additional animations */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.6s ease forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s infinite;
+}
+
+.animate-tilt:hover {
+  animation: tilt 5s infinite ease-in-out;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -140,10 +188,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 61, 143, 0.2);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 61, 143, 0.3);
 }

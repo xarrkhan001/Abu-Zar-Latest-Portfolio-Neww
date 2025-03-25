@@ -27,63 +27,63 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with payment integration, user authentication, and admin dashboard.",
+      title: "E-Commerce Platform 02",
+      description: "An online shopping platform with payment integration, user authentication, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      tools: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
+      tools: ["React", "Next.js", "Stripe", "Firebase"],
+      liveUrl: "https://eccomerce-02-abuzar.vercel.app/",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A productivity app with drag-and-drop functionality, notification system, and team collaboration features.",
+      title: "E-Commerce Platform 01",
+      description: "A feature-rich online shop with modern UI/UX design principles.",
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      tools: ["Next.js", "TypeScript", "PostgreSQL", "Redis"],
-      liveUrl: "#",
+      tools: ["React", "Redux", "Tailwind CSS", "Node.js"],
+      liveUrl: "https://eccomerce-01-abuzar.vercel.app/",
       githubUrl: "#"
     },
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "A data visualization platform with real-time analytics, custom reports, and machine learning insights.",
+      title: "Disney+ Clone",
+      description: "A detailed recreation of the Disney+ streaming platform with similar functionality.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      tools: ["React", "D3.js", "Python", "TensorFlow"],
-      liveUrl: "#",
+      tools: ["React", "Firebase", "Styled Components"],
+      liveUrl: "https://disney-abuzar.vercel.app/",
       githubUrl: "#"
     },
     {
-      title: "Social Media Platform",
-      description: "A community-focused social network with real-time messaging, content creation, and analytics.",
+      title: "Grocery Store App",
+      description: "A functional grocery delivery application with product search and ordering system.",
       image: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      tools: ["React Native", "Firebase", "Express", "Socket.io"],
-      liveUrl: "#",
+      tools: ["React", "Context API", "Express.js", "MongoDB"],
+      liveUrl: "https://grocery-store-react-one.vercel.app/",
       githubUrl: "#"
     },
     {
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing projects, skills, and contact information with smooth animations.",
+      title: "Personal News Website",
+      description: "A news aggregation platform with categorized articles and reader-friendly layout.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=815&q=80",
-      tools: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      liveUrl: "#",
+      tools: ["React", "Tailwind CSS", "News API"],
+      liveUrl: "https://abuzarnew.vercel.app/",
       githubUrl: "#"
     },
     {
-      title: "Weather Application",
-      description: "A weather forecast application with location detection, radar maps, and severe weather alerts.",
+      title: "Heritage Walk Footwear",
+      description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-      tools: ["JavaScript", "OpenWeather API", "Leaflet.js", "Geolocation API"],
-      liveUrl: "#",
+      tools: ["Next.js", "Stripe", "Firebase", "Sanity"],
+      liveUrl: "https://heritage-walk-footer-nextjs-project-eccomerce.vercel.app/",
       githubUrl: "#"
     }
   ];
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 bg-secondary">
       <div className="container-custom">
         <div className="text-center mb-16 reveal">
-          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-portfolio-blue/10 text-portfolio-blue text-sm font-medium">
+          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-[#003d8f]/10 text-[#003d8f] text-sm font-medium">
             Portfolio
           </div>
-          <h2 className="section-title">Recent Projects</h2>
+          <h2 className="section-title">My Projects</h2>
           <p className="section-subtitle mx-auto">
             Here's a selection of my recent work, showcasing my skills in web development, 
             design, and problem-solving across different domains.
@@ -123,7 +123,7 @@ const ProjectsSection = () => {
                     href={project.liveUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-portfolio-blue text-white p-2 rounded-full hover:bg-portfolio-blue/80 transition-colors"
+                    className="bg-[#003d8f] text-white p-2 rounded-full hover:bg-[#003d8f]/80 transition-colors"
                     aria-label="Live Demo"
                   >
                     <ExternalLink size={18} />
@@ -146,7 +146,7 @@ const ProjectsSection = () => {
                   {project.tools.map((tool, toolIndex) => (
                     <span 
                       key={toolIndex} 
-                      className="bg-secondary px-2 py-0.5 rounded-full text-xs"
+                      className="bg-[#003d8f]/10 text-[#003d8f] px-2 py-0.5 rounded-full text-xs"
                     >
                       {tool}
                     </span>

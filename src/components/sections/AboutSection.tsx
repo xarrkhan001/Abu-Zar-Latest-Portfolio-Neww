@@ -1,5 +1,5 @@
 
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, MapPin, Mail, Phone } from "lucide-react";
 import { useEffect } from "react";
 
 const AboutSection = () => {
@@ -27,9 +27,13 @@ const AboutSection = () => {
 
   const skills = [
     "JavaScript", "TypeScript", "React.js", "Next.js", 
-    "Node.js", "Express", "GraphQL", "MongoDB",
-    "PostgreSQL", "AWS", "Docker", "Tailwind CSS"
+    "Vue.js", "Node.js", "Express.js", "GraphQL", 
+    "MongoDB", "Firebase", "Sanity", "Tailwind CSS",
+    "MUI", "Redux Toolkit", "HTML/CSS", "APIs Integration", 
+    "FramerMotion", "Vuetify"
   ];
+
+  const languages = ["English", "Urdu", "Pashto"];
 
   return (
     <section id="about" className="py-24 bg-secondary">
@@ -38,33 +42,80 @@ const AboutSection = () => {
           {/* Image Column */}
           <div className="lg:w-2/5 reveal">
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-portfolio-blue opacity-70" />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-portfolio-blue opacity-70" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 border-t-4 border-l-4 border-[#003d8f] opacity-70" />
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-4 border-r-4 border-[#003d8f] opacity-70" />
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2344&q=80" 
+                src="/lovable-uploads/e3360417-b511-49c9-ab2e-778f6fd7130d.png" 
                 alt="About Me" 
                 className="rounded-2xl shadow-xl relative z-10 w-full object-cover aspect-[3/4]"
               />
+              
+              {/* Contact Info Box */}
+              <div className="absolute -bottom-16 -right-16 lg:-right-24 bg-white p-6 rounded-xl shadow-xl z-20 w-64 reveal" style={{ animationDelay: '0.4s' }}>
+                <h4 className="font-semibold text-xl mb-4 text-[#003d8f]">Contact Info</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#003d8f]/10 flex items-center justify-center text-[#003d8f]">
+                      <Phone size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm">Phone</p>
+                      <p className="font-medium">0317-8521144</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#003d8f]/10 flex items-center justify-center text-[#003d8f]">
+                      <Mail size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm">Email</p>
+                      <p className="font-medium">abuzarktk123@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#003d8f]/10 flex items-center justify-center text-[#003d8f]">
+                      <MapPin size={18} />
+                    </div>
+                    <div>
+                      <p className="text-sm">Location</p>
+                      <p className="font-medium">Warsak Rd, Peshawar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
           {/* Content Column */}
-          <div className="lg:w-3/5 reveal">
-            <div className="inline-block px-3 py-1 mb-6 rounded-full bg-portfolio-blue/10 text-portfolio-blue text-sm font-medium">
+          <div className="lg:w-3/5 reveal mt-16 lg:mt-0">
+            <div className="inline-block px-3 py-1 mb-6 rounded-full bg-[#003d8f]/10 text-[#003d8f] text-sm font-medium">
               About Me
             </div>
             
             <h2 className="section-title">
-              Dedicated to crafting exceptional digital experiences
+              Frontend Developer with passion for creating elegant digital experiences
             </h2>
             
-            <p className="text-lg mb-6 text-muted-foreground">
-              With over 5 years of experience in web development, I specialize in creating efficient, scalable, and user-friendly applications. My approach combines technical expertise with a deep understanding of design principles.
+            <p className="text-lg mb-8 text-muted-foreground">
+              A Web Developer with two years of hands-on experience in designing, developing, and deploying web applications using various technologies and programming languages. Currently working as a Software Engineer at Tech Emulsion.
             </p>
             
-            <p className="text-lg mb-8 text-muted-foreground">
-              I believe in minimalist design that focuses on user experience without unnecessary complexity. Each project I undertake reflects my commitment to clean code, performance optimization, and attention to detail.
-            </p>
+            {/* Languages */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold mb-4">Languages</h3>
+              <div className="flex flex-wrap gap-3">
+                {languages.map((language, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-white px-4 py-2 rounded-lg shadow-sm border border-border"
+                  >
+                    {language}
+                  </div>
+                ))}
+              </div>
+            </div>
             
             {/* Skills */}
             <div className="mb-8">
@@ -75,14 +126,14 @@ const AboutSection = () => {
                     key={index} 
                     className="flex items-center space-x-2"
                   >
-                    <CheckCircle size={18} className="text-portfolio-blue" />
+                    <CheckCircle size={18} className="text-[#003d8f]" />
                     <span>{skill}</span>
                   </div>
                 ))}
               </div>
             </div>
             
-            <a href="#contact" className="btn-primary">
+            <a href="#contact" className="btn-primary bg-[#003d8f] hover:shadow-[0_0_0_4px_rgba(0,61,143,0.3)]">
               Let's Work Together
             </a>
           </div>

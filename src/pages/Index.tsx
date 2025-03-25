@@ -39,8 +39,19 @@ const Index = () => {
         
         if (targetElement) {
           e.preventDefault();
+          
+          // Add a nice scroll animation
           targetElement.scrollIntoView({
             behavior: 'smooth'
+          });
+          
+          // Highlight the active section in the navbar
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === targetId) {
+              link.classList.add('active');
+            }
           });
         }
       }
@@ -48,11 +59,32 @@ const Index = () => {
 
     document.addEventListener('click', handleAnchorClick);
     
+    // Add scroll listener to highlight active section in the navbar
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPosition = window.scrollY + 100;
+
+      sections.forEach(section => {
+        const sectionTop = (section as HTMLElement).offsetTop;
+        const sectionHeight = (section as HTMLElement).offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.add('active');
+        } else {
+          document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
     // Call after a small delay to ensure all elements are loaded
     setTimeout(initScrollAnimations, 200);
 
     return () => {
       document.removeEventListener('click', handleAnchorClick);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
