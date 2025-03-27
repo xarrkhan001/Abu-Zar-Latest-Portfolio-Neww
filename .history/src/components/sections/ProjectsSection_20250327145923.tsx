@@ -36,15 +36,6 @@ const ProjectsSection = () => {
    },
 
    {
-    title: "AI Image Generation Platform",
-    description: "A platform that generates images using AI, providing unique and creative visuals on demand.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=815&q=80",
-    tools: ["React", "Tailwind CSS", "DALL·E API"],
-    liveUrl: "https://abuzar-ai-image-generation.vercel.app/",
-    githubUrl: "#"
-},
-
-   {
     title: "Heritage Walk Footwear",
     description: "An e-commerce platform for 'Heritage Walk Footwear' specializing in Peshawari and Charsadda chapals. Built with Next.js using Stripe, Firebase, and Sanity for payments, authentication, and product management.",
     image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
@@ -77,7 +68,14 @@ const ProjectsSection = () => {
       liveUrl: "https://grocery-store-react-one.vercel.app/",
       githubUrl: "#"
     },
-
+    {
+      title: "AI Image Generation Platform",
+      description: "A platform that generates images using AI, providing unique and creative visuals on demand.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=815&q=80",
+      tools: ["React", "Tailwind CSS", "DALL·E API"],
+      liveUrl: "https://abuzar-ai-image-generation.vercel.app/",
+      githubUrl: "#"
+  }
   
  
   ];
